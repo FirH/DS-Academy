@@ -27,18 +27,13 @@ st.write('Garasi')
 col1, col2 = st.columns((1,6))
 
 with col1 :
-    ada_grs = st.button('Ada')
+    if(st.button('ada')) :
+        grs = 1
 with col2 :
-    tidak_ada_grs = st.button('Tidak ada')
+    if(st.button('Tidak ada')) :
+        grs = 0
 
 st.write(f'grs : {grs}')
-
-if(ada_grs) :
-    tidak_ada_grs = False
-    grs = 1
-elif (tidak_ada_grs) :
-    ada_grs = False
-    grs = 0
 
 predict_button = st.button('Predict')
 
