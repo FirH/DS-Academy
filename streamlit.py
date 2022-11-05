@@ -36,4 +36,4 @@ with col2 :
 predict_button = st.button('Predict')
 
 if(predict_button) :
-    st.write(f'Harga rumah impianmu adalah Rp{prediksi(lt,lb,jkt,jkm,0)}')
+    st.write(f'Harga rumah impianmu adalah Rp{prediksi(lt,lb,jkt,jkm,1)}')
