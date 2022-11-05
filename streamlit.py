@@ -32,4 +32,5 @@ if(opt == 'Ada') :
 else :
     grs = 0
 
-st.write(f'Harga rumah impianmu adalah Rp{prediksi(lt,lb,jkt,jkm,grs)}')
+if(st.button('Predict')) :
+    st.write(f'Harga rumah impianmu adalah Rp{prediksi(lt,lb,jkt,jkm,grs)}')
