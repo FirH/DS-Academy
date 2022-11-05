@@ -26,9 +26,9 @@ opt = st.selectbox(
 
 grs = 0
 if(opt == 'Ada') :
-    grs =1
+    grs = 1
 else :
     grs = 0
 
 if(st.button('Predict')) :
-    st.write(f'Harga rumah impianmu adalah Rp{prediksi(lt,lb,jkt,jkm,grs)}')
+    st.write("Harga rumah impianmu adalah Rp{:,}".format(prediksi(lt,lb,jkt,jkm,grs)))
