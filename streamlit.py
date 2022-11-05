@@ -24,8 +24,6 @@ opt = st.selectbox(
     ('Ada', 'Tidak ada')
 )
 
-predict_button = st.button('Predict')
-
 grs = 0
 if(opt == 'Ada') :
     grs =1
