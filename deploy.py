@@ -15,13 +15,22 @@ def prediksi(LT,LB,JKT,JKM,GRS):
     predict['Garasi'] = [GRS]
     return(model.predict(predict)[0])   
 
-lt = st.number_input("Input LT")
-lb = st.number_input("Input LB")
-jkt = st.number_input("Input JKT")
-jkm = st.number_input("Input JKM")
-grs = st.number_input("Input GRS")
+lt = st.number_input("Luas Tanah")
+lb = st.number_input("Luas Bangunan")
+jkt = st.number_input("Jumlah Kamar Tidur")
+jkm = st.number_input("Jumlah Kamar Mandi")
+st.write('Garasi')
+button1,button2 = st.columns([1,1])
+with button1 :
+    grs_button = st.button('Ada')
+    if(grs_button) :
+        grs = 1
+with button2 :
+    grs_button = st.button('Tidak')
+    if(grs_button) :
+        grs = 0
 
 predict_button = st.button('Predict')
 
 if(predict_button) :
-    st.write(f'Harga rumah impianmu adalah : Rp{prediksi(lt,lb,jkt,jkm,grs)}')
+    st.write(f'Harga rumah impianmu adalah Rp{prediksi(lt,lb,jkt,jkm,grs)}')
