@@ -24,4 +24,4 @@ grs = st.number_input("Input GRS")
 predict_button = st.button('Predict')
 
 if(predict_button) :
-    st.write(prediksi(lt,lb,jkt,jkm,grs))
+    st.write(f'Harga rumah impianmu adalah : Rp{prediksi(lt,lb,jkt,jkm,grs)}')
