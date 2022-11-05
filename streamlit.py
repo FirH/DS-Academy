@@ -23,7 +23,7 @@ opt = st.selectbox(
     ('Ada', 'Tidak ada')
 )
 
-grs = 0
+grs = 1
 if(opt == 'Ada') :
     grs = 1
 elif (opt == 'Tidak ada'):
