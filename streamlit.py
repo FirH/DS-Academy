@@ -29,7 +29,7 @@ with col1 :
     grs = 1
 with col2 :
     st.button('Tidak ada')
-    grs = 2
+    grs = 0
 
 predict_button = st.button('Predict')
 
