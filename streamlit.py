@@ -25,14 +25,11 @@ st.write('Garasi')
 col1, col2 = st.columns((1,6))
 
 with col1 :
-    ada_grs = st.button('Ada')
-with col2 :
-    tidak_ada_grs = st.button('Tidak ada')
-    
-if(ada_grs) :
+    st.button('Ada')
     grs = 1
-if(tidak_ada_grs) :
-    grs = 0
+with col2 :
+    st.button('Tidak ada')
+    grs = 2
 
 predict_button = st.button('Predict')
 
