@@ -31,6 +31,8 @@ with col2 :
     st.button('Tidak ada')
     grs = 0
 
+st.write('grs : ' + grs)
+
 predict_button = st.button('Predict')
 
 if(predict_button) :
