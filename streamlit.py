@@ -29,5 +29,7 @@ if(opt == 'Ada') :
 elif (opt == 'Tidak ada'):
     grs = 0
     
+st.write(f'GRS {grs}')
+    
 if(st.button('Predict')) :
     st.write("Harga rumah impianmu adalah Rp{:,}".format(prediksi(lt,lb,jkt,jkm,grs)))
