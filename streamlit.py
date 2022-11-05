@@ -1,5 +1,4 @@
 import pickle
-import numpy as np
 import pandas as pd
 import streamlit as st
 
@@ -27,8 +26,8 @@ opt = st.selectbox(
 grs = 0
 if(opt == 'Ada') :
     grs = 1
-else :
+elif (opt == 'Tidak ada'):
     grs = 0
-
+    
 if(st.button('Predict')) :
     st.write("Harga rumah impianmu adalah Rp{:,}".format(prediksi(lt,lb,jkt,jkm,grs)))
