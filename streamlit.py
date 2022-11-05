@@ -20,15 +20,18 @@ lb = st.number_input("Luas Bangunan")
 jkt = st.number_input("Jumlah Kamar Tidur")
 jkm = st.number_input("Jumlah Kamar Mandi")
 st.write('Garasi')
-button1,button2 = st.columns(2)
-with button1 :
-    grs_button = st.button('Ada')
-    if(grs_button) :
-        grs = 1
-with button2 :
-    grs_button = st.button('Tidak')
-    if(grs_button) :
-        grs = 0
+
+col1, col2 = st.columns((1,6))
+
+with col1 :
+    ada_grs = st.button('Ada')
+with col2 :
+    tidak_ada_grs = st.button('Tidak ada')
+    
+if(ada_grs) :
+    grs = 1
+if(tidak_ada_grs) :
+    grs = 0
 
 predict_button = st.button('Predict')
 
