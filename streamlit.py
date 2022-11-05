@@ -21,7 +21,7 @@ jkt = st.number_input("Jumlah Kamar Tidur")
 jkm = st.number_input("Jumlah Kamar Mandi")
 st.write('Garasi')
 
-col1, col2 = st.columns((1,6))
+col1, col2 = st.columns(1,6)
 
 with col1 :
     ada_grs = st.button('Ada')
