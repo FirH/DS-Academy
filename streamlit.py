@@ -19,6 +19,7 @@ lt = st.number_input("Luas Tanah")
 lb = st.number_input("Luas Bangunan")
 jkt = st.number_input("Jumlah Kamar Tidur")
 jkm = st.number_input("Jumlah Kamar Mandi")
+grs = 0
 st.write('Garasi')
 
 col1, col2 = st.columns((1,6))
