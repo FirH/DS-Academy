@@ -19,18 +19,23 @@ lt = st.number_input("Luas Tanah")
 lb = st.number_input("Luas Bangunan")
 jkt = st.number_input("Jumlah Kamar Tidur")
 jkm = st.number_input("Jumlah Kamar Mandi")
+ada_grs = False
 st.write('Garasi')
-fun = ""
 
 col1, col2 = st.columns((1,6))
 
 with col1 :
     if(st.button('ada')) :
-        fun = f'Harga rumah impianmu adalah Rp{prediksi(lt,lb,jkt,jkm,1)}'
+        ada_grs = True
 with col2 :
     if(st.button('Tidak ada')) :
-        fun = f'Harga rumah impianmu adalah Rp{prediksi(lt,lb,jkt,jkm,0)}'
+        ada_grs = False
+
 
 predict_button = st.button('Predict')
-if(predict_button) :
-    st.write(fun)
+
+if(predict_button and ada_grs) :
+    st.write(f'Harga rumah impianmu adalah Rp{prediksi(lt,lb,jkt,jkm,1)}')
+else :
+    print('Tidak ada garasi')
+    st.write(f'Harga rumah impianmu adalah Rp{prediksi(lt,lb,jkt,jkm,0)}')
