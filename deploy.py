@@ -20,7 +20,7 @@ lb = st.number_input("Luas Bangunan")
 jkt = st.number_input("Jumlah Kamar Tidur")
 jkm = st.number_input("Jumlah Kamar Mandi")
 st.write('Garasi')
-button1,button2 = st.columns([1,1])
+button1,button2 = st.columns(2)
 with button1 :
     grs_button = st.button('Ada')
     if(grs_button) :
